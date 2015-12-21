@@ -1,23 +1,12 @@
 ---
 ---
 
-@mixin bg-gradient-t2b($start-colour, $end-colour) {
-    background-color: $start-colour;
-    background-image: -webkit-gradient(linear, left top, left bottom, from($start-colour), to($end-colour));
-    background-image: -webkit-linear-gradient(top, $start-colour, $end-colour);
-    background-image:    -moz-linear-gradient(top, $start-colour, $end-colour);
-    background-image:     -ms-linear-gradient(top, $start-colour, $end-colour);
-    background-image:      -o-linear-gradient(top, $start-colour, $end-colour);
-    background-image:         linear-gradient(top, $start-colour, $end-colour);
-    filter:            progid:DXImageTransform.Microsoft.gradient(start-colourStr='#{$start-colour}', end-colourStr='#{$end-colour}');
-}
-
-
 body {
 	margin: 0;
 	padding: 0;
 	min-height: 100vh;
-	@include bg-gradient-t2b(#8FB3D9, #fff);
+	background: url('/images/bg.png') no-repeat repeat;
+	background-size: contain;
 }
 
 header {
@@ -27,8 +16,9 @@ header {
 	h1 {
 		display: inline-block;
 		padding: 0;
-		margin: 0 2rem;
+		margin: 0 .5rem;
 		font-size: 1rem;
+		line-height: 1.5rem;
 		font-weight: 500;
 		&:hover {
 			color: #fff;
