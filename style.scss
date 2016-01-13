@@ -53,6 +53,14 @@ header {
 }
 
 main {
+	color: #fff;
+	
+	a {
+		color: #fff;
+		text-decoration: none;
+		border-bottom: 1px dashed #fff;
+	}
+	
 	.sidebar_style {
 		background-color: #2E3436;
 		border: 1px solid #555;
